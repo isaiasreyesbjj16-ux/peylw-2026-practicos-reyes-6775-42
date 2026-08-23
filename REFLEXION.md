@@ -1,6 +1,6 @@
 REFLEXION.md
 
-mi token es -peylw-2026-practicos-reyes-6775-42
+mi token es peylw-2026-practicos-reyes-6775-42
 
 
 On branch main
