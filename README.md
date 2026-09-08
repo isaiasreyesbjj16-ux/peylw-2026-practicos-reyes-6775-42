@@ -3,8 +3,8 @@
 ## Información del Alumno
 
 - **Nombre y Apellido:** Isaías Reyes Arzamendia
-- **Legajo/Matrícula:** 6775
-- **Últimos 4 dígitos del DNI:** 42
+- **Legajo/Matrícula:** 8542
+- **Últimos 4 dígitos del DNI: 6775
 - **Fecha de Entrega:** 2026-09-07
 - **Enlace al Repositorio de GitHub:** https://github.com/isaiasreyesbjj16-ux/peylw-2026-practicos-reyes-6775-42
 - **Enlace a la Página en GitHub Pages:** https://isaiasreyesbjj16-ux.github.io/peylw-2026-practicos-reyes-6775-42/
