@@ -4,10 +4,10 @@
 
 ### 1. Nombre de la imagen y valor del atributo `alt`
 
-La imagen que guardé en mi carpeta `img/` se llama **`mi_foto.png`** y se carga desde `acercade.html` con la siguiente etiqueta:
+La imagen que guardé en mi carpeta `img/` se llama **`img.png`** y se carga desde `acercade.html` con la siguiente etiqueta:
 
 ```html
-<img src="img/mi_foto.png" alt="Foto de perfil de Isaías Reyes Arzamendia">
+<img src="img/img.png" alt="Foto de perfil de Isaías Reyes Arzamendia">
 ```
 
 El valor del atributo `alt` que asigné es: **"Foto de perfil de Isaías Reyes Arzamendia"**.
