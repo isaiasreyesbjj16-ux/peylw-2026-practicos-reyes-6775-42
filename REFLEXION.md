@@ -60,3 +60,41 @@ Aquí `for="edad"` apunta al `id="edad"` del `<input>`, quedando ambos fuertemen
 - **Distintos `name`:** Cada radio pertenece a un grupo independiente, por lo que se pueden seleccionar **varias opciones a la vez** (una por cada grupo). Esto rompe el comportamiento excluyente esperado y permite elegir más de una "opción única".
 
 En mi formulario uso el mismo `name="metodo"` en los tres radios de "Método de Contacto Preferido" para garantizar que solo se pueda seleccionar una opción por defecto.
+
+---
+
+## Laboratorio 4: Reflexión Aplicada
+
+### 1. Fragmento CSS de la rotación del logo del CURZA
+
+```css
+header .logo {
+    transition: transform 1s ease-in-out;
+}
+
+header .logo:hover {
+    transform: rotateY(360deg);
+}
+```
+
+`transition: transform 1s ease-in-out` hace que cualquier cambio en la propiedad `transform` se anime suavemente durante 1 segundo con una curva de aceleración `ease-in-out`. Al poner el cursor sobre la imagen, la pseudo-clase `:hover` aplica `transform: rotateY(360deg)`, que rota el logo una vuelta completa sobre el eje Y (en 3D); al retirar el cursor, la transición revierte la rotación de la misma forma.
+
+### 2. ¿Por qué el `<h2>` sticky necesita `background-color`?
+
+```css
+section.biografia h2 {
+    position: sticky;
+    top: 0;
+    background-color: var(--blanco);
+    z-index: 10;
+}
+```
+
+Un elemento con `position: sticky` "flota" sobre el contenido que va pasando debajo del área de desplazamiento (por eso también necesita `z-index`). Si no tuviera `background-color` (opaco), el texto y la imagen de la biografía que corren por debajo se verían **a través del título**, superponiéndose y haciendo ilegible la lectura. El color de fondo opaco tapa el contenido desplazado para que el encabezado se mantenga siempre legible.
+
+### 3. Cambios visuales que aplica `@media (max-width: 768px)` en pantallas móviles
+
+- El `header` pasa a `flex-direction: column`: el título y el logo se apilan uno debajo del otro (el logo se hace más chico, `height: 34px`).
+- La navegación deja de estar en una fila horizontal y se **apila verticalmente** (`flex-direction: column`): cada enlace ocupa todo el ancho como un bloque, más fácil de tocar con el dedo.
+- Se reduce el padding de `main` y de las secciones para aprovechar mejor el ancho de pantalla, se achica el tipo del `h1` y del botón "volver arriba", y la tabla del resumen usa una fuente menor.
+- El `body` aumenta su `padding-top` (de 72px a 100px) porque el encabezado apilado ocupa más alto y no debe tapar el contenido inicial.
